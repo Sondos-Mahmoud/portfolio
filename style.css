@@ -137,14 +137,16 @@ section{
     margin: 30px;
 
 }
-.projects{
-    background-color: #04133c;
+.projects {
+    background-color: #000016;
 }
+
 .projects .content{
-    margin: 30px;
+    margin-top: 30px;
 }
-.project-card{
-    background-color:#fff ;
+
+.project-card {
+    background-color: #fff;
     border: 1px solid #fff;
     min-height: 14em;
     width: 23em;
@@ -153,12 +155,127 @@ section{
     margin: 20px;
     transition: 0.7s ease;
 }
-.project-card:hover{
-transform: scale(1.1);
+
+.project-card:hover {
+   transform: scale(1.1);
 }
-.project-card:hover .project-image{
+
+.project-card:hover .project-image {
     opacity: 0.9;
-    }
-.project-image img{
+ }
+
+ .projects-image {
     width: 100%;
+    height: 200px; /* Set the desired height */
+    overflow: hidden;
+}
+
+.projects-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* This will ensure the image covers the entire container without distortion */
+}
+
+
+.project-info {
+    padding: 1em;
+}
+.project-category {
+    font-size: 0.8em;
+    color: #000;
+}
+
+.project-title {
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+    font-weight: 800;
+    margin-top: 10px;
+}
+
+.more-details {
+    text-decoration: none;
+    color: #3a6cf4;
+}
+
+.more-detailes:hover{
+    color: #6077ca;
+
+}
+.contact .icon{
+    font-size: 4.5em;
+}
+.contact .info p{
+    font-size: 1.5em;
+}
+.footer{
+    background-color: #011037;
+    color: #fff;
+    display: flex;
+    padding: 2em ;
+    justify-content: space-between;
+}
+.footer-title{
+    font-size: 1.3em;
+    font-weight: 600;
+
+}
+.footer-title span{
+    color: #3a6cf4;
+}
+.footer .social-icons a{
+    font-size: 1.3em;
+    padding: 0 12px 0 0;
+}
+@media (max-width:1023px){
+    header{
+        padding: 12px 20px;
+    }
+
+    .navigation a{
+        padding-left: 10px;
+    }
+
+    .title{
+        font-size: 1.8em;
+    }
+
+    section{
+        padding: 80px 20px;
+    }
+
+    .main-content h2{
+        font-size: 1em;
+    }
+
+    .main-content h3{
+        font-size: 1.6em;
+    }
+
+    .content{
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
+
+@media (max-width:641px){
+    body{
+        font-size: 12px;
+    }
+
+    .main-content h2{
+        font-size: 0.8em;
+    }
+
+    .main-content h3{
+        font-size: 1.4em;
+    }
+}
+
+@media (max-width:300px){
+    body{
+        font-size: 10px;
+     
+    }
 }
