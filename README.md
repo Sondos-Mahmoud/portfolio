@@ -1,7 +1,4 @@
-# portfolio
-Creating a README file for your portfolio site is a great way to provide information about its purpose, features, and how to navigate it. Here's a basic structure you can use:
 
----
 
 # Portfolio Website README
 
